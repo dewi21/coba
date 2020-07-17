@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <style>
+        .center {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .iphone {
+            width: 310px;
+            height: 800px;
+            background-color: #e6e6e5;
+        }
+
+        .rectangle-1 {
+            width: 310px;
+            height: 163px;
+            background-color: #021c1e;
+        }
+
+        .name {
+            width: 185px;
+            height: 27px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: 1.35;
+            letter-spacing: normal;
+            text-align: left;
+            color: rgb(247, 245, 246);
+            padding: 31px 171px 0px 19px;
+        }
+
+        .tag {
+            width: 114px;
+            height: 24px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        .ellipse-1 {
+            width: 9px;
+            height: 2px;
+            background-color: #ffffff;
+            position: relative;
+            margin: auto;
+            top: -40px;
+            right: -138px;
+        }
+
+        .ellipse-2 {
+            width: 9px;
+            height: 2px;
+            background-color: #ffffff;
+            position: relative;
+            margin: auto;
+            top: -38px;
+            right: -138px;
+        }
+
+        .ellipse-3 {
+            width: 9px;
+            height: 2px;
+            background-color: #ffffff;
+            position: relative;
+            margin: auto;
+            top: -36px;
+            right: -138px;
+        }
+
+        .profile {
+            width: 164px;
+            height: 190px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            background-color: #ffffff;
+            position: absolute;
+            margin: auto;
+            z-index: 2;
+            /* top: 100px;
+            right: 800px; */
+        }
+
+        .photo {
+            width: 140px;
+            height: 180px;
+            z-index: 1;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            /* border: solid 0.3px #b6b2b2; */
+        }
+
+        .telegram {
+            width: 13px;
+            height: 12px;
+            object-fit: contain;
+            /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
+            /* border: solid 0.3px #707070; */
+            position: absolute;
+            z-index: 2;
+            /* margin: auto; */
+            margin-top: -20px;
+            margin-right: 30px;
+            margin-left: 165px;
+            /* padding-bottom: 20px; */
+        }
+
+        .email {
+            width: 13px;
+            height: 12px;
+            object-fit: contain;
+            /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
+            /* border: solid 0.3px #707070; */
+            position: absolute;
+            z-index: 2;
+            margin: auto;
+            margin-top: -20px;
+            margin-right: 50px;
+            margin-left: 185px;
+            /* padding-bottom: 20px; */
+        }
+
+        .alamat {
+            width: 13px;
+            height: 12px;
+            object-fit: contain;
+            /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
+            /* border: solid 0.3px #707070; */
+            position: absolute;
+            z-index: 2;
+            margin: auto;
+            margin-top: 160px;
+            margin-right: 55px;
+            margin-left: 87px;
+            margin-bottom: 800px;
+        }
+
+        .instagram {
+            width: 13px;
+            height: 12px;
+            object-fit: contain;
+            /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
+            /* border: solid 0.3px #707070; */
+            position: absolute;
+            z-index: 2;
+            margin: auto;
+            /* padding-top: 0px; */
+            margin-top: -20px;
+            margin-right: 10px;
+            margin-left: 227px;
+            margin-bottom: 800px;
+            /* padding-bottom: 280px; */
+        }
+
+        .fb {
+            width: 13px;
+            height: 12px;
+            object-fit: contain;
+            /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
+            /* border: solid 0.3px #707070; */
+            position: absolute;
+            z-index: 2;
+            margin: auto;
+            margin-top: -20px;
+            margin-right: 30px;
+            margin-left: 150px;
+            margin-bottom: 800px;
+        }
+
+        .wa {
+            width: 13px;
+            height: 12px;
+            object-fit: contain;
+            /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
+            /* border: solid 0.3px #707070; */
+            position: absolute;
+            z-index: 2;
+            margin: auto;
+            margin-top: -20px;
+            margin-right: 20px;
+            margin-left: 130px;
+            /* padding-bottom: 20px; */
+        }
+
+        .rectangle-2 {
+            width: 120px;
+            height: 18px;
+            box-shadow: 0 6px 6px 0 #ffffff;
+            /* background-color: #838383; */
+            position: fixed;
+            margin: auto;
+            z-index: 2;
+            /* padding-top: 10px; */
+            padding-right: 0px;
+            padding-left: 10px;
+            /* padding-bottom: 20px; */
+        }
+
+        .personal {
+            width: 110px;
+            height: 13px;
+            font-family: 'roboto', sans-serif;
+            font-size: 9px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.25;
+            letter-spacing: normal;
+            text-align: justify;
+            color: #ffffff;
+            position: absolute;
+            margin: auto;
+            z-index: 2;
+            padding-top: 9px;
+            padding-right: 30px;
+            padding-left: 150px;
+            padding-bottom: 20px;
+        }
+
+        .rectangle-3 {
+            width: 120px;
+            height: 1px;
+            /* background-color: #4b59a7; */
+            position: absolute;
+            margin: auto;
+            z-index: 2;
+            padding-top: 150px;
+            padding-right: 304px;
+        }
+
+        .data {
+            width: 123px;
+            height: 65px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 10px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.15em;
+            letter-spacing: normal;
+            text-align: justify;
+            color: #ffffff;
+            position: absolute;
+            margin: auto;
+            z-index: 2;
+            padding-top: 8px;
+            padding-right: 30px;
+            padding-left: 150px;
+            padding-bottom: 20px;
+        }
+
+        .rectangle-4 {
+            width: 194px;
+            height: 159px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            background-color: #d4d4d4;
+            z-index: 3;
+            padding-top: 9px;
+            padding-right: 30px;
+            padding-left: 150px;
+            padding-bottom: 20px;
+            /* margin: 83px 45px 0 136px; */
+        }
+        
+        .skill {
+            width: 185px;
+            height: 27px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: condensed;
+            font-style: normal;
+            text-align: center;
+            line-height: 1.35;
+            letter-spacing: normal;
+            text-align: left;
+            color: rgb(247, 245, 246);
+            margin: 0 auto;
+            /* padding: 10px 171px 0px 19px; */
+        }
+
+        .tager {
+            width: 185px;
+            height: 24px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 11px;
+            font-weight: 300;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        .rectangle-6 {
+            width: 106px;
+            height: 9px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            background-color:#2c7873 !important;
+            padding-top: -70px;
+            padding-right: 150px;
+            padding-left: 100px;
+        }
+
+        .skill {
+            width: 100%;
+            height: 65px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 10px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.25;
+            letter-spacing: normal;
+            text-align: justify;
+            color: #ffffff;
+            position: absolute;
+            z-index: 2;
+            margin-top: -85px;
+            margin-right: 180px;
+            margin-left: -90px;
+            margin-bottom: -10px;
+            padding: 11px 171px 0px 19px;
+        }
+        .hobi {
+            width: 100%;
+            height: 65px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.25;
+            letter-spacing: normal;
+            text-align: justify;
+            color: #ffffff;
+            position: absolute;
+            z-index: 2;
+            margin-top: -14px;
+            margin-right: 300px;
+            margin-left: -20px;
+            margin-bottom: -100px;
+            padding: 11px 171px 0px 19px;
+        }
+        .rectangle-7 {
+            width: 250px;
+            height: 30px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            background-color:#004445 !important;
+            margin-top: 30px;
+            margin-left: -40px;
+            /* padding-top: 25px;
+            padding-right: 150px;
+            padding-left: 100px; */
+        }
+        .album {
+            width: 100%;
+            height: 65px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.25;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            position: absolute;
+            z-index: 2;
+            margin-top: -15px;
+            margin-right: 0px;
+            margin-left: 10px;
+            margin-bottom: -100px;
+            /* padding: 11px 150px 0px 19px; */
+        }
+
+
+        /* Smartphones (portrait) ----------- */
+        @media only screen and (max-width : 320px) {
+            /* Styles */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 119px 194px;
+            grid-column: auto;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: #6fb98f;
+            padding: 83px 90px;
+            z-index: 0;
+        }
+        
+        .bold{
+            font-weight: bold !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="center iphone">
+        <div class="rectangle-1">
+            <div class="name">
+                Dewi Marietta Br Purba
+                <div class="tag">
+                    Content Writer
+                </div>
+            </div>
+            <div class="menu">
+                <div class="ellipse-1"></div>
+                <div class="ellipse-2"></div>
+                <div class="ellipse-3"></div>
+            </div>
+            <div class="grid-container">
+                <img src="../public/img.jpg" class="photo" />
+                <a href="https://goo.gl/maps/GKSDpbfa5tDBJLxr6" target="_blank" title="Look My Address"><img
+                        src="../public/alamat.png" class="alamat" />
+                    <a href="https://www.instagram.com/dewiipurba/" target="_blank" title="Follow My Instagram"><img
+                            src="../public/instagram.png" class="instagram" />
+                        <a href="https://www.facebook.com/dewi.oshin.58" target="_blank"
+                            title="Add Friend on Facebook"><img src="../public/fb.png" class="fb" />
+                            <a href="mailto:dewipurba03@gmail.com" target="_blank" title="Send on Email"><img
+                                    src="../public/email.png" class="email" />
+                                <a href="https://api.whatsapp.com/send?phone=6282294137356" target="_blank"
+                                    title="Chat on Whastapp"><img src="../public/wa.png" class="wa" />
+                                    <a href="https://t.me/dewipurbaa" target="_blank" title="Chat on Telegram"><img
+                                            src="../public/telegram.png" class="telegram" /></a>
+                                    <div class="personal">
+                                        Personal
+                                    </div>
+                                    <p class="data">
+                                      <span class="bold">  DATA PRIBADI : </span><br />
+                                        28 March 1990 <br />
+                                        Female <br />
+                                        North Sumatera, Indonesia<br />
+                                        dewipurba03@gmail.com<br />
+                                        +6182294137356
+                                    </p>
+            </div>
+           <div class="grid-container">
+            <div class="rectangle-6">
+                <div class="skill">
+                   <span class="bold">SKILL (KEMAMPUAN)</span> 
+                    <div class="tager" style="margin-top: -10px;">
+                        <ul><li>Photoshop &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;: 80%</li>
+                           <li> Adobe Premiere &nbsp; &nbsp; : 75%</li>
+                           <li> After Effect &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : 80%</li>
+                           <li> Adobe Ilustrator &nbsp; &nbsp;&nbsp;: 70% </li>
+                           <li> Microsoft Office &nbsp; &nbsp; : 75%</li>
+                           <li> Dasar Akutansi &nbsp; &nbsp; &nbsp; : 70%</li>
+                        </ul>
+                <div class="hobi">   
+                    <span class="bold">HOBBY</span> 
+                        <div class="hobi" style="margin-top: -30px;">
+                            <ul><li>Watching, reading, and listening music.</li>
+                            <div class="rectangle-7" style="text-align:center;">
+                                 <p class="bold">ALBUM FOTO</span> 
+                            </div>
+                             <div class="rectangle-7" style="text-align:center;">
+                                  <img src="1.gif" style="width:100%;" class="photo">
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+           </div>
+        </div>
+</body>
+
+</html>
